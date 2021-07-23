@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c_tyEHTFEeuVs7UTZH9EJw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ofZLkILVEeuixMMhfJCruw" featurename="children" parentElementId="com.m4rc310.vega.rcp.trimbar.top">
+    <elements xsi:type="menu:ToolControl" xmi:id="_BRVzgILcEeuixMMhfJCruw" elementId="com.m4rc310.rcp.ui.statusbar.toolcontrol.st" contributionURI="bundleclass://com.m4rc310.rcp.ui.statusbar/com.m4rc310.rcp.ui.statusbar.toolcontrols.ToolcontrolStretch">
+      <tags>stretch</tags>
+    </elements>
+    <elements xsi:type="menu:ToolBar" xmi:id="_S7HGkILcEeuixMMhfJCruw" elementId="com.m4rc310.rcp.ui.statusbar.toolbar.user"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_lYJcoHTFEeuVs7UTZH9EJw" featurename="children" parentElementId="com.m4rc310.vega.rcp.trimbar.statusbar">
+    <elements xsi:type="menu:ToolBar" xmi:id="_3GrXwITHEeuUasZwfx_Dxg" elementId="com.m4rc310.rcp.ui.statusbar.toolbar.left">
+      <children xsi:type="menu:ToolControl" xmi:id="_7KJ0QITHEeuUasZwfx_Dxg" elementId="com.m4rc310.rcp.ui.statusbar.toolcontrol.text.message" contributionURI="bundleclass://com.m4rc310.rcp.ui.statusbar/com.m4rc310.rcp.ui.statusbar.toolcontrols.ToolcontrolTextMessage"/>
+    </elements>
+    <elements xsi:type="menu:ToolControl" xmi:id="_p_wg8HTFEeuVs7UTZH9EJw" elementId="com.m4rc310.rcp.ui.statusbar.toolcontrol.sp" contributionURI="bundleclass://com.m4rc310.rcp.ui.statusbar/com.m4rc310.rcp.ui.statusbar.toolcontrols.ToolcontrolStretch">
+      <tags>stretch</tags>
+    </elements>
+    <elements xsi:type="menu:ToolBar" xmi:id="_Kh9KkHT3EeuVs7UTZH9EJw" elementId="com.m4rc310.rcp.ui.statusbar.toolbar.midle.side"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_wmWzoITuEeuUasZwfx_Dxg" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_yoNWoITuEeuUasZwfx_Dxg" elementId="com.m4rc310.rcp.ui.statusbar.addon.0" contributionURI="bundleclass://com.m4rc310.rcp.ui.statusbar/com.m4rc310.rcp.ui.statusbar.addons.AddonInit"/>
+  </fragments>
+</fragment:ModelFragments>

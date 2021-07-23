@@ -1,0 +1,142 @@
+
+Label {
+	font-family: Lucida Grande;
+	font-size: 11
+}
+
+
+.MTrimmedWindow {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.MWindow{
+ 	margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.LabelUser{
+	font-size: 9;
+	color:#73716B
+}
+
+MToolBar{
+	margin-right: 15px;
+}
+
+.MPartStack.active.noFocus{
+}
+
+.LabelPdvStatus{
+	margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Lucida Grande;
+	font-size: 20;
+	font-weight: bold;
+	color:#7F7F7F;
+	background-color: #E8F2FE;
+}
+
+.LabelBuyId{
+	font-size: 12;
+	font-weight: bold;
+	color:#7F7F7F;
+}
+
+_CTabFolder {
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');	 
+	swt-outer-keyline-color: #B6BCCC; 
+ 	swt-corner-radius: 12; 
+ 	swt-shadow-visible: true; 
+	swt-shadow-color: #d2e1f0;	
+ 	swt-selected-tab-fill: #ffffff; 
+ 	swt-tab-outline: #d2e1f0; 
+ 	swt-unselected-tabs-color: #d2e1f0;
+ 	padding:5px;
+}
+
+
+.MPartStack {
+  swt-unselected-tabs-color: #FFFFFF #FFFFFF #FFFFFF 100% 100%;
+  swt-outer-keyline-color: #FFFFFF;
+  swt-swt-inner-keyline-color: #FFFFFF;
+  font-size: 10;
+}
+
+
+#LabelForAppName{
+	font-weight: bold;
+	color:#3C9AFD;
+	font-size: 18;
+}
+
+
+
+
+#MyLabelVersion{
+	color:#3C9AFD;
+	font-size: 10;
+	font-style: italic;
+}
+
+#LabelCopyrigth{
+font-size: 8;
+}
+
+
+#MyLabelUserInfo{
+	font-weight: bold;
+	color:#7F7F7F;
+	font-size: 10;
+}
+
+.MyLabelUpdateWindowTitle{
+	font-size: 14;
+	font-weight: bold;
+}
+
+.MyLabelUpdateWindowSubtitle{}
+
+.MContainnerLoading{
+	background-color: #FBF2C3;
+	swt-corner-radius: 12; 
+}
+
+.MContainnerLoading Label{
+	color:#C7A56F;
+}
+
+
+.MMessageInfo{
+	background-color: #FBF2C3;
+	color:#C7A56F;
+}
+.MMessageInfo Label{
+	color:#D0B888;
+}
+.MMessageInfo Link{
+	font-size: 8; color:#3C9AFD;
+}
+
+
+
+.MTest{background-color: #E8F2FE;}
+
+.MLabelError{font-size:10; color:#E24133}
+
+.MLogo{font-size: 10; color:#3C9AFD;}
+
+.MSearchComponent{
+	background-color: #E8F2FE;
+}
+
+.MyLabelUserFullName{
+	font-size: 12;
+	font-weight: bold;
+}

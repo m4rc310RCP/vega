@@ -1,0 +1,12 @@
+{
+  unidades{id numero listSexo{id sigla descricao} quantidadeFuncionarios  nome 
+  	lotacoes{id nome numero 
+      funcionarios{
+        id matricula 
+        	dados{cpf id nome}
+        	vinculo{id codigo inicio 
+            contrato{id dataInicio paragrafoEmpregador paragrafoEmpregado}}
+      }
+    }
+  }
+}

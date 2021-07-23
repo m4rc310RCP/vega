@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Vega" uid="com.m4rc310.vega.rcp.product" id="com.m4rc310.vega.rcp.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clearPersistedState -Duser.timezone=GMT-3:00
+      </programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+      <vmArgsWin>-Dswt.autoScale=100
+      </vmArgsWin>
+   </launcherArgs>
+
+   <windowImages i16="/products/com.m4rc310.vega.rcp/icons/colors.png" i128="/products/com.m4rc310.vega.rcp/icons/umbrela.png"/>
+
+   <splash
+      location="com.m4rc310.vega.rcp.product"
+      startupProgressRect="5,275,445,15"
+      startupMessageRect="7,252,445,20"
+      startupForegroundColor="000000" />
+   <launcher name="Vega">
+      <linux icon="/products/com.m4rc310.vega.rcp/icons/umbrela.XPM"/>
+      <macosx icon="/products/com.m4rc310.vega.rcp/icons/colors.icns"/>
+      <win useIco="true">
+         <ico path="/products/com.m4rc310.vega.rcp/icons/umbrela.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.rcp" installMode="root"/>
+      <feature id="org.eclipse.e4.rcp" installMode="root"/>
+      <feature id="com.m4rc310.vega.install" installMode="root"/>
+      <feature id="org.eclipse.emf.ecore" installMode="root"/>
+      <feature id="org.eclipse.emf.common" installMode="root"/>
+      <feature id="com.opcoach.e4.preferences.feature" installMode="root"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <property name="osgi.instance.area.default" value="@user.home/workspace" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+      <file path="/com.m4rc310.vega.rcp/css/mls.css"/>
+   </cssInfo>
+
+</product>

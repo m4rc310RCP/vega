@@ -1,0 +1,205 @@
+!SESSION 2021-05-30 20:13:47.383 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_282
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho3033903015267550794secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho3033903015267550794secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.383
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:47.384
+!MESSAGE Add request for Vega 1.0.0.202105302312 (com.m4rc310.vega.rcp.product 1.0.0.202105302312) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.910
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 20:13:53.911
+!MESSAGE Add request for Vega 1.0.0.202105302312 (com.m4rc310.vega.rcp.product 1.0.0.202105302312) is satisfiable
+!SESSION 2021-05-30 23:04:54.180 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_282
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho6317759532200052940secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho6317759532200052940secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.180
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.180
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.181
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.181
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.181
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.181
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.181
+!MESSAGE Add request for Vega 1.0.0.202105310202 (com.m4rc310.vega.rcp.product 1.0.0.202105310202) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:04:54.181
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for Vega 1.0.0.202105310202 (com.m4rc310.vega.rcp.product 1.0.0.202105310202) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-05-30 23:05:08.621
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+!SESSION 2021-06-01 19:28:08.473 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_282
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho8919232954381942699secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho8919232954381942699secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for Vega 1.0.0.202106012226 (com.m4rc310.vega.rcp.product 1.0.0.202106012226) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:08.473
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for Vega 1.0.0.202106012226 (com.m4rc310.vega.rcp.product 1.0.0.202106012226) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 19:28:17.667
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+!SESSION 2021-06-01 22:49:49.550 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_282
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho2148550669480760719secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho2148550669480760719secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for Vega 1.0.0.202106020148 (com.m4rc310.vega.rcp.product 1.0.0.202106020148) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:49:49.551
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for Vega 1.0.0.202106020148 (com.m4rc310.vega.rcp.product 1.0.0.202106020148) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 22:50:00.770
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+!SESSION 2021-06-01 23:04:52.291 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_282
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho4702077189872994350secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/gw/qls15lfj1q10lzm1pz7d3bm00000gn/T/tycho4702077189872994350secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.291
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.292
+!MESSAGE Add request for Vega 1.0.0.202106020202 (com.m4rc310.vega.rcp.product 1.0.0.202106020202) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.292
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.292
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.292
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.292
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.293
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:04:52.293
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for Vega 1.0.0.202106020202 (com.m4rc310.vega.rcp.product 1.0.0.202106020202) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.15.0.v20180722-1159 (org.eclipse.emf.ecore.feature.group 2.15.0.v20180722-1159) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for e4 Preferences 1.3.0.201903181741 (com.opcoach.e4.preferences.feature.feature.group 1.3.0.201903181741) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for Eclipse RCP 4.9.0.v20180906-1121 (org.eclipse.rcp.feature.group 4.9.0.v20180906-1121) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for Install Feature 1.0.1 (com.m4rc310.vega.install.feature.group 1.0.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for EMF Common 2.15.0.v20180723-1316 (org.eclipse.emf.common.feature.group 2.15.0.v20180723-1316) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2021-06-01 23:05:03.704
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 1.6.200.v20180906-1121 (org.eclipse.e4.rcp.feature.group 1.6.200.v20180906-1121) is satisfiable

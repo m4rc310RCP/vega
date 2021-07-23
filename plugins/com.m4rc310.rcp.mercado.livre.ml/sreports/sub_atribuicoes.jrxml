@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sub_membros" pageWidth="191" pageHeight="31" columnWidth="191" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7c61420c-c2e8-49be-b360-bc7c0e0986c3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nome" class="java.lang.String"/>
+	<field name="descricao" class="java.lang.String"/>
+	<field name="membros" class="java.util.List"/>
+	<title>
+		<band height="13">
+			<staticText>
+				<reportElement x="0" y="0" width="191" height="10" uuid="5ec3ca46-6868-4ab0-9905-90f57738af2d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MEMBROS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="-3" width="191" height="18" isPrintInFirstWholeBand="true" uuid="08c224c2-baaf-4e82-8a49-89269f8270f6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="16" width="191" height="5" uuid="0402195e-972c-4e66-b738-48d2ce8784e5">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource($F{membros})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_membros")]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="21" width="191" height="1" forecolor="#B3B3B3" backcolor="#E0E0E0" uuid="e680f36a-c806-48c4-a560-8fc896ad8a82"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

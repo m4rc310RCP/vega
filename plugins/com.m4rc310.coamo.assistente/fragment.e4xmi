@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_m7WmsLQ9EeusjO-NYwKfeA">
+  <imports xsi:type="commands:BindingContext" xmi:id="_D9rJgLUGEeusjO-NYwKfeA" elementId="org.eclipse.ui.contexts.dialogAndWindow"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_qazwILQ9EeusjO-NYwKfeA" featurename="categories" parentElementId="xpath:/">
+    <elements xsi:type="commands:Category" xmi:id="_x1_IQLQ9EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.category.test.functions" name="Test Functions"/>
+    <elements xsi:type="commands:Category" xmi:id="_1z6WYLQ9EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.category.editor" name="Editor"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4I_XYLQ9EeusjO-NYwKfeA" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_1PaokLRFEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.command.save" commandName="Save"/>
+    <elements xsi:type="commands:Command" xmi:id="_44BG8LRFEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.command.save.all" commandName="SaveAll"/>
+    <elements xsi:type="commands:Command" xmi:id="_mtuLkLUHEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.command.newFuncionario" commandName="NewFuncionario" description="New Funcionario" category="_1z6WYLQ9EeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Command" xmi:id="_QWfyALWjEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.command.refresh" commandName="Refresh" description="Refresh" category="_1z6WYLQ9EeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Command" xmi:id="_Jz_l4LZ1EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.command.menulistfuncionarios" commandName="MenuListFuncionarios"/>
+    <elements xsi:type="commands:Command" xmi:id="_sf-qgLZ6EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.command.toolbarlistfuncionarios" commandName="ToolbarListFuncionarios"/>
+    <elements xsi:type="commands:Command" xmi:id="_91hloLqOEeuzCu3CkB8qnQ" elementId="com.m4rc310.coamo.assistente.command.show.setores" commandName="ShowSetores" description="ShowSetores" category="_1z6WYLQ9EeusjO-NYwKfeA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-XmOsLQ9EeusjO-NYwKfeA" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_-C9h0LRFEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handler.0" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerSave" command="_1PaokLRFEeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_BBlPELRGEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handler.1" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerSaveAll" command="_44BG8LRFEeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_D2ajkLUJEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handler.2" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerNewFuncionario" command="_mtuLkLUHEeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_UW-k4LWjEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handler.3" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerRefresh" command="_QWfyALWjEeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_6-D28LZ1EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handler.4" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerMenuShowFuncionarios" command="_Jz_l4LZ1EeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_wnddQLZ6EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handler.5" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerToolbarShowFuncionarios" command="_sf-qgLZ6EeusjO-NYwKfeA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_DbAncLqPEeuzCu3CkB8qnQ" elementId="com.m4rc310.coamo.assistente.handler.6" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.handlers.HandlerShowSetores" command="_91hloLqOEeuzCu3CkB8qnQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_HkIPsLQ-EeusjO-NYwKfeA" featurename="children" parentElementId="com.m4rc310.vega.rcp.perspectivestack.main">
+    <elements xsi:type="advanced:Perspective" xmi:id="_TVK00LQ-EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.perspective.default" label="%text.default.perspective" tooltip="%text.default.perspective">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_kf7QoLQ-EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.partsashcontainer.principal" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_rZB2cLQ-EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.partsashcontainer.0" containerData="30" selectedElement="_A5GssLQ_EeusjO-NYwKfeA">
+          <children xsi:type="basic:PartStack" xmi:id="_A5GssLQ_EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.partstack.left">
+            <tags>leftPartStack</tags>
+            <children xsi:type="basic:Part" xmi:id="_79BpQLwKEeusVKSJUy_0dw" elementId="com.m4rc310.coamo.assistente.partdescriptor.listsetores" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.parts.PartSetores" label="%title.list.setores" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/go-home.png" tooltip="%title.list.setores" closeable="true">
+              <toolbar xmi:id="_8sAPILwKEeusVKSJUy_0dw" elementId="com.m4rc310.coamo.assistente.toolbar.3">
+                <children xsi:type="menu:HandledToolItem" xmi:id="_IOeMwLwLEeusVKSJUy_0dw" elementId="com.m4rc310.coamo.assistente.handledtoolitem.refresh" label="%text.refresh" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/nav_refresh.png" tooltip="%text.refresh" command="_QWfyALWjEeusjO-NYwKfeA"/>
+              </toolbar>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_r4HmMLQ-EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.partsashcontainer.1" containerData="70" selectedElement="_yy3x0LQ-EeusjO-NYwKfeA">
+          <children xsi:type="basic:PartStack" xmi:id="_yy3x0LQ-EeusjO-NYwKfeA" elementId="org.eclipse.e4.primaryDataStack">
+            <tags>EditorStack</tags>
+            <tags>org.eclipse.e4.primaryDataStack</tags>
+            <tags>primaryCategory</tags>
+            <tags>NoAutoCollapse</tags>
+            <tags>editorCategory</tags>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_sXLrULQ_EeusjO-NYwKfeA" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_uhVOsLQ_EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.addon.init" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.addons.AddonInit"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_pdr8YLREEeusjO-NYwKfeA" featurename="children" parentElementId="org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_wkXrMLREEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handledtoolitem.textsave" label="%text.save" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/save_edit.png" tooltip="%text.save" command="_1PaokLRFEeusjO-NYwKfeA"/>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_OqX1cLRFEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handledtoolitem.textsaveall" label="%text.save.all" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/saveall_edit_floppy.png" tooltip="%text.save.all" command="_44BG8LRFEeusjO-NYwKfeA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_IVn9ELRJEeusjO-NYwKfeA" featurename="children" parentElementId="file" positionInList="">
+    <elements xsi:type="menu:MenuSeparator" xmi:id="_Yte9QLUCEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.menuseparator.0"/>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_K9_GcLRJEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handledmenuitem.save" label="%text.save" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/save_edit.png" tooltip="%text.save" command="_1PaokLRFEeusjO-NYwKfeA"/>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_SxKH0LRJEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handledmenuitem.saveAll" label="%text.save.all" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/saveall_edit_floppy.png" tooltip="%text.save.all" command="_44BG8LRFEeusjO-NYwKfeA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_f2Mm0LTKEeusjO-NYwKfeA" featurename="children" parentElementId="new" positionInList="">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_IYUKoLTLEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handledmenuitem.new.funcionario" label="%text.funcionario" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/applications-development.png" tooltip="%text.funcionario" command="_mtuLkLUHEeusjO-NYwKfeA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_LT5wMLUGEeusjO-NYwKfeA" featurename="bindingTables" parentElementId="xpath:/">
+    <elements xsi:type="commands:BindingTable" xmi:id="_N1Su4LUGEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.bindingtable.0" bindingContext="_D9rJgLUGEeusjO-NYwKfeA">
+      <bindings xmi:id="_RcHroLUGEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.keybinding.0" keySequence="M1+S" command="_1PaokLRFEeusjO-NYwKfeA"/>
+      <bindings xmi:id="_T0n0ELUGEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.keybinding.1" keySequence="M1+M2+S" command="_44BG8LRFEeusjO-NYwKfeA"/>
+      <bindings xmi:id="_fhhqoLUHEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.keybinding.2" keySequence="M1+F" command="_mtuLkLUHEeusjO-NYwKfeA"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_rzW4kLUbEeusjO-NYwKfeA" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_vzIg0LUbEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.partdescriptor.funcionario" label="%title.part.funcionarios" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/system-users.png" tooltip="%title.part.funcionarios" category="leftPartStack" closeable="true" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.parts.PartFuncionarios">
+      <toolbar xmi:id="_H5oU0LUeEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JoGo0LUeEeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.handledtoolitem.refresh" label="%text.refresh" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/nav_refresh.png" command="_QWfyALWjEeusjO-NYwKfeA"/>
+      </toolbar>
+    </elements>
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_LHxSILwsEeusVKSJUy_0dw" elementId="com.m4rc310.coamo.assistente.partdescriptor.funcionario" label="%title.funcionario" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/vcard.png" tooltip="%title.funcionario" allowMultiple="true" category="editorCategory" closeable="true" contributionURI="bundleclass://com.m4rc310.coamo.assistente/com.m4rc310.coamo.assistente.parts.PartFuncionario">
+      <toolbar xmi:id="_YMCZsLwsEeusVKSJUy_0dw" elementId="com.m4rc310.coamo.assistente.toolbar.2"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_46si8LZzEeusjO-NYwKfeA" featurename="children" parentElementId="window">
+    <elements xsi:type="menu:Menu" xmi:id="_9ZaxALZzEeusjO-NYwKfeA" elementId="view" label="%text.view">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_E3dxkLtDEeuzCu3CkB8qnQ" elementId="com.m4rc310.coamo.assistente.handledmenuitem.textviewsetores" label="%text.view.setores" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/start-here.png" tooltip="%text.view.setores" mnemonics="" command="_91hloLqOEeuzCu3CkB8qnQ"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_iYVhkLZ5EeusjO-NYwKfeA" featurename="children" parentElementId="com.m4rc310.vega.rcp.trimbar.top" positionInList="after:org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:ToolBar" xmi:id="_gsa84LZ6EeusjO-NYwKfeA" elementId="com.m4rc310.coamo.assistente.toolbar.1">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_m69KgLqSEeuzCu3CkB8qnQ" elementId="com.m4rc310.coamo.assistente.handledtoolitem.refresh" label="%text.refresh" iconURI="platform:/plugin/com.m4rc310.coamo.assistente/icons/nav_refresh.png" tooltip="%text.refresh" command="_QWfyALWjEeusjO-NYwKfeA"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

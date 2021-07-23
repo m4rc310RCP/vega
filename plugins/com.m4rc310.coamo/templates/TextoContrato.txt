@@ -1,0 +1,21 @@
+<html>
+EMPREGADOR: (Nome), com sede à (Rua), (número), (bairro), (CEP), (Cidade), (Estado), inscrita no CNPJ sob nº xxxxxx, e Inscrição Estadual nº xxxxx, representada nesse ato por (Nome), (nacionalidade), (estado civil), (profissão), portador da cédula de identidade R.G. nº xxxxx e CPF/MF nº xxxxx;
+<br/><br/>
+EMPREGADO: (Nome), (nacionalidade), (estado civil), (profissão), portador da cédula de identidade R.G. nº xxxxxx e CPF/MF nº xxxxxx, residente e domiciliado na (Rua), (número), (bairro), (CEP), (Cidade), (Estado).
+<br/><br/>
+Pelo presente instrumento particular de contrato individual de trabalho, fica justo e contratado o seguinte:
+<br/>
+<b>Cláusula 1ª</b> - O EMPREGADO prestará ao EMPREGADOR, a partir de xx/xx/xx e assinatura deste instrumento, seus trabalhos exercendo a função de (Cargo), prestando pessoalmente o labor diário no período compreendido entre xx horas às xx horas, e intervalo de xx horas para almoço;
+<br/>
+<b>Cláusula 2ª</b> - Não haverá expediente nos dias de sábado, sendo prestado a compensação de horário semanal;
+<br/>
+<b>Cláusula 3ª</b> - O EMPREGADOR pagará mensalmente, ao EMPREGADO, a título de salário a importância de R$ xxxxxxx (valor), com os descontos previstos por lei;
+<br/>
+<b>Cláusula 4ª</b> - Estará o EMPREGADO subordinado a legislação vigente no que diz respeito aos descontos de faltas e demais sanções disciplinares contidas na Consolidação das Leis do Trabalho.
+<br/>
+<b>Cláusula 5ª</b> - O prazo de duração do contrato é de 2 (dois) anos, contados a partir da assinatura pelos contratantes;
+<br/>
+<b>Cláusula 6ª</b> - O EMPREGADO obedecerá o regulamento interno da empresa, e filosofia de trabalho da mesma.
+<br/><br/>
+Como prova do acordado, assinam instrumento, afirmado e respeitando seu teor por inteiro, e firmam conjuntamente a este duas testemunhas, comprovando as razões descritas.
+</html>

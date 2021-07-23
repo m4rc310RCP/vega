@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.opcoach.e4.preferences.e4PreferencePages">
+      <page
+            class="com.m4rc310.rcp.graphql.preferences.GraphQLPreferences"
+            id="com.m4rc310.rcp.graphql.page1"
+            name="name">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.m4rc310.rcp.graphql.preferences.GraphQLPreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

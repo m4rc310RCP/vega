@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.m4rc310.vega</groupId>
+	<artifactId>products</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	
+	<name>Product's</name>
+
+	<properties>
+		<product-id>com.m4rc310.vega.rcp.product</product-id>
+		<rf>Vega</rf>
+		<maven.deploy.skip>false</maven.deploy.skip>
+	</properties>
+	
+	<parent>
+		<groupId>com.m4rc310.vega</groupId>
+		<artifactId>relengs</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	
+	<profiles>
+		<profile>
+			<id>copyRepo</id>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho.extras</groupId>
+						<artifactId>tycho-p2-extras-plugin</artifactId>
+						<version>${tycho-extras.version}</version>
+						<executions>
+							<execution>
+								<id>add-to-update-site</id>
+								<phase>install</phase>
+								<goals>
+									<goal>mirror</goal>
+								</goals>
+								<configuration>
+									<source>
+										<repository>
+											<url>/Users/marcelo/workspace/d/com.m4rc310.izar/releng/com.m4rc310.izar.update/target/repository</url>
+										</repository>
+									</source>
+									<destination>/Users/marcelo/Desktop/repo</destination>
+									<append>true</append>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+
+		</profile>
+	</profiles>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<includeAllDependencies>false</includeAllDependencies>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+						</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+				
+				<configuration>
+					<products>
+						<product>
+							<id>${product-id}</id>
+							<rootFolder>${rf}</rootFolder>
+						</product>
+					</products>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/products/${product-id}/icons/</outputDirectory>
+							<nonFilteredFileExtensions>
+								<nonFilteredFileExtension>ico</nonFilteredFileExtension>
+								<nonFilteredFileExtension>xpm</nonFilteredFileExtension>
+								<nonFilteredFileExtension>png</nonFilteredFileExtension>
+							</nonFilteredFileExtensions>
+							<resources>
+								<resource>
+									<directory>com.m4rc310.vega.rcp/icons</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>copy-splash</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/products/${product-id}/</outputDirectory>
+							<nonFilteredFileExtensions>
+								<nonFilteredFileExtension>bmp</nonFilteredFileExtension>
+							</nonFilteredFileExtensions>
+							<resources>
+								<resource>
+									<directory>com.m4rc310.vega.rcp/splash</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					
+				</executions>
+			</plugin>
+			
+		</plugins>
+	</build>
+</project>

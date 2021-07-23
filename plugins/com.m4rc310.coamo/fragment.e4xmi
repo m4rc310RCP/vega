@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_LARJMIVIEeuUasZwfx_Dxg">
+  <imports xsi:type="commands:BindingContext" xmi:id="_3epz8I28EeudvJ-5WmnCFA" elementId="org.eclipse.ui.contexts.dialogAndWindow"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_MGd8QIVIEeuUasZwfx_Dxg" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_RiT54IVIEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.addon.start" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.addons.AddonStartApp"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_tludIIVPEeuUasZwfx_Dxg" featurename="children" parentElementId="file">
+    <elements xsi:type="menu:Menu" xmi:id="_4TBtUIVPEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.menu.register" label="Cadastro" mnemonics="C">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_ND8-kIVQEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.handledmenuitem.cadastro.unidade" label="Unidade" mnemonics="u" command="_F0fuQIVQEeuUasZwfx_Dxg"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_5e3UAJA0EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.handledmenuitem.pessoafisica" label="Pessoa Fisica" iconURI="platform:/plugin/com.m4rc310.coamo/icons/system-users.png" tooltip="Cadatro de Pessoa Fisica" mnemonics="P" command="_rN_2cJA0EeudvJ-5WmnCFA"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Sp8p4JW7Eeuj8KOqvr6Arw" elementId="com.m4rc310.coamo.handledmenuitem.grupo" label="Certifica&#xe7;&#xe3;o" iconURI="platform:/plugin/com.m4rc310.coamo/icons/vcard.png" tooltip="Grupo, Forma&#xe7;&#xe3;o ou Certifica&#xe7;&#xe3;o" command="_sFBb0J_cEeuFxNL-m8BIkQ"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Zq9jYJs-EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.handledmenuitem.setor" label="Setor" iconURI="platform:/plugin/com.m4rc310.coamo/icons/start-here.png" tooltip="Cadastro de Setor" mnemonics="S" command="_Qy6koJs-EeuFxNL-m8BIkQ"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_bZuiIJ46EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.handledmenuitem.funcionario" label="Funcionario" iconURI="platform:/plugin/com.m4rc310.coamo/icons/applications-development.png" mnemonics="F" command="_DvWXgJ46EeuFxNL-m8BIkQ"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Z4pmcKJXEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.handledmenuitem.cadastrodeepis" label="Cadastro de EPIs" tooltip="Cadastro de EPIs" mnemonics="E" command="_IC9-UKJXEeu7LPBsnCgBzA"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_3La_oKOZEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.handledmenuitem.atividade" label="Atividade" tooltip="Cadastro de Atividade" mnemonics="A" command="_oQLvYKOZEeu7LPBsnCgBzA"/>
+      <children xsi:type="menu:Menu" xmi:id="_KVyakKPNEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.menu.vinculos" label="Vinculos" mnemonics="V">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_M4zJ4KPNEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.handledmenuitem.epiatividade" label="Epi &#xe0; Atividade" command="_16pBgKPLEeu7LPBsnCgBzA"/>
+      </children>
+    </elements>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_rnXyAI2-EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.handledmenuitem.abrir" label="Abrir" tooltip="Abrir" mnemonics="A" command="_9HZsgI25EeudvJ-5WmnCFA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DG9xAIVQEeuUasZwfx_Dxg" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_F0fuQIVQEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.command.cadastrounidade" commandName="Cadastro Unidade"/>
+    <elements xsi:type="commands:Command" xmi:id="_K-LJIIhWEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.command.refresh" commandName="Refresh"/>
+    <elements xsi:type="commands:Command" xmi:id="_9HZsgI25EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.command.open" commandName="Abrir"/>
+    <elements xsi:type="commands:Command" xmi:id="_rN_2cJA0EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.command.cadastro.pessoa.fisica" commandName="Cadastro Pessoa Fisica"/>
+    <elements xsi:type="commands:Command" xmi:id="_d2RfwJW4Eeuj8KOqvr6Arw" elementId="com.m4rc310.coamo.command.grupos" commandName="Cadastro de Grupo" description="Cadastro de Grupo"/>
+    <elements xsi:type="commands:Command" xmi:id="_Qy6koJs-EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.command.setor" commandName="Cadastro de Setor" description="Cadastro de Setor"/>
+    <elements xsi:type="commands:Command" xmi:id="_DvWXgJ46EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.command.cadastrodefuncionario" commandName="Cadastro de Funcionario" description="Cadastro de Funcionario"/>
+    <elements xsi:type="commands:Command" xmi:id="_sFBb0J_cEeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.command.formacao" commandName="Cadastro Formacao"/>
+    <elements xsi:type="commands:Command" xmi:id="_IC9-UKJXEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.command.cadastrodeepi" commandName="Cadastro de EPI" description="Cadastro de EPI"/>
+    <elements xsi:type="commands:Command" xmi:id="_oQLvYKOZEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.command.cadastroatividade" commandName="Cadastro Atividade" description="Cadastro Atividade"/>
+    <elements xsi:type="commands:Command" xmi:id="_16pBgKPLEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.command.cadastrovinculoatividadeepis" commandName="Cadastro Vinculo Atividade Epis" description="Cadastro Vinculo Atividade Epis"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_8UTU8IVQEeuUasZwfx_Dxg" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_-dP-cIVQEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.handler.0" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerRegistryUnidade" command="_F0fuQIVQEeuUasZwfx_Dxg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_Suzz4IhWEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.handler.1" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerRefresh" command="_K-LJIIhWEeuUasZwfx_Dxg"/>
+    <elements xsi:type="commands:Handler" xmi:id="__2bekI25EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.handler.2" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerAbrir" command="_9HZsgI25EeudvJ-5WmnCFA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_vyxCIJA0EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.handler.3" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerPessoaFisica" command="_rN_2cJA0EeudvJ-5WmnCFA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_mzkK4JW4Eeuj8KOqvr6Arw" elementId="com.m4rc310.coamo.handler.4" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerGrupo" command="_d2RfwJW4Eeuj8KOqvr6Arw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_V9elAJs-EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.handler.5" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerSetor" command="_Qy6koJs-EeuFxNL-m8BIkQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_HutJAJ46EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.handler.6" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerFuncionario" command="_DvWXgJ46EeuFxNL-m8BIkQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_yJF3EJ_cEeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.handler.7" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerFormacao" command="_sFBb0J_cEeuFxNL-m8BIkQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_Nxau4KJXEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.handler.8" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerEpi" command="_IC9-UKJXEeu7LPBsnCgBzA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_tsjRcKOZEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.handler.9" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerAtividade" command="_oQLvYKOZEeu7LPBsnCgBzA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_BkSIsKPNEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.handler.10" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerVinculoAtividadeEpi" command="_16pBgKPLEeu7LPBsnCgBzA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_bL_dwIX0EeuUasZwfx_Dxg" featurename="children" parentElementId="com.m4rc310.vega.rcp.perspectivestack.main">
+    <elements xsi:type="advanced:Perspective" xmi:id="_ct4HQIX0EeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.perspective.coamo" accessibilityPhrase="Coamo" label="Coamo">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_h2JooIX0EeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.partsashcontainer.0" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_p1T3kIX0EeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.partsashcontainer.1" containerData="35" selectedElement="_zfSCgIX0EeuUasZwfx_Dxg">
+          <children xsi:type="basic:PartStack" xmi:id="_zfSCgIX0EeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.partstack.left">
+            <tags>com.m4rc310.coamo.partstack.left</tags>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_qyQWEIX2EeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.partsashcontainer.2" containerData="65">
+          <children xsi:type="basic:PartStack" xmi:id="_zGCKIYX2EeuUasZwfx_Dxg" elementId="org.eclipse.e4.primaryDataStack">
+            <tags>EditorStack</tags>
+            <tags>org.eclipse.e4.primaryDataStack</tags>
+            <tags>primaryCategory</tags>
+            <tags>NoAutoCollapse</tags>
+          </children>
+        </children>
+      </children>
+    </elements>
+    <elements xsi:type="advanced:Perspective" xmi:id="_F7VAEJAGEeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.perspective.no.connection" selectedElement="_w0YmEJAGEeudvJ-5WmnCFA" label="Sem Conec&#xe7;&#xe3;o">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_w0YmEJAGEeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.partsashcontainer.3" selectedElement="_y2j5MJAGEeudvJ-5WmnCFA">
+        <children xsi:type="basic:PartStack" xmi:id="_y2j5MJAGEeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.partstack.0"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_TbmjQIX3EeuUasZwfx_Dxg" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_XEqUoIX3EeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.partdescriptor.unidade" label="Unidade" iconURI="platform:/plugin/com.m4rc310.coamo/icons/chart_org_inverted.png" tooltip="Unidade" category="com.m4rc310.coamo.partstack.left" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.parts.PartUnidade">
+      <tags>active</tags>
+      <tags>onTop: true</tags>
+      <tags>NoTitle</tags>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_vAufAI20EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.popupmenu.unidade">
+        <children xsi:type="menu:DynamicMenuContribution" xmi:id="_lZDn4I25EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.dynamicmenucontribution.0" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.dynamics.UnidadeDynamicMenuControl"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SZrXUI26EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.handledmenuitem.abrir" label="" tooltip="" mnemonics="" command="_9HZsgI25EeudvJ-5WmnCFA">
+          <visibleWhen xsi:type="ui:ImperativeExpression" xmi:id="_wy2VMI26EeudvJ-5WmnCFA" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.imperative.expressions.AbrirImperativeExpression"/>
+        </children>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_lL3awJs-EeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.handledmenuitem.cadastro.setor" iconURI="platform:/plugin/com.m4rc310.coamo/icons/start-here.png" command="_Qy6koJs-EeuFxNL-m8BIkQ">
+          <visibleWhen xsi:type="ui:ImperativeExpression" xmi:id="_sy6EoJs-EeuFxNL-m8BIkQ" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.imperative.ImperativeSetorExpression"/>
+        </children>
+      </menus>
+      <toolbar xmi:id="_kbW4sIhXEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_lSiYUIhXEeuUasZwfx_Dxg" elementId="com.m4rc310.coamo.handledtoolitem.testtree" label="Atualizar" iconURI="platform:/plugin/com.m4rc310.coamo/icons/nav_refresh.png" command="_K-LJIIhWEeuUasZwfx_Dxg"/>
+      </toolbar>
+      <variables>active</variables>
+    </elements>
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_mdp5cI2uEeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.partdescriptor.funcionario" label="Cadastro Funcion&#xe1;rios" iconURI="platform:/plugin/com.m4rc310.coamo/icons/user.png" tooltip="Cadastro Funcion&#xe1;rios" allowMultiple="true" category="primaryCategory" closeable="true" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.parts.funcionario.PartFuncionario">
+      <tags>NoDetach</tags>
+    </elements>
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_mi16cJAqEeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.partdescriptor.grupos.certificacoes" label="Grupos/Certifica&#xe7;&#xf5;es" iconURI="platform:/plugin/com.m4rc310.coamo/icons/bricks.png" tooltip="Grupos ou Certifica&#xe7;&#xf5;es" category="com.m4rc310.coamo.partstack.left" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.parts.grupos.PartGrupos">
+      <toolbar xmi:id="_DrZSEJA4EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.toolbar.1">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_wFsdkJW4Eeuj8KOqvr6Arw" elementId="com.m4rc310.coamo.handledtoolitem.cadastrogrupo" label="Cadastro Grupo" iconURI="platform:/plugin/com.m4rc310.coamo/icons/vcard.png" command="_sFBb0J_cEeuFxNL-m8BIkQ"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_HvVNII29EeudvJ-5WmnCFA" featurename="bindingTables" parentElementId="xpath:/">
+    <elements xsi:type="commands:BindingTable" xmi:id="_KNqQwI29EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.bindingtable.0" bindingContext="_3epz8I28EeudvJ-5WmnCFA">
+      <bindings xmi:id="_LhFAcI29EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.keybinding.0" keySequence="F3" command="_9HZsgI25EeudvJ-5WmnCFA"/>
+      <bindings xmi:id="_sZYPAJA1EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.keybinding.1" keySequence="M1+F" command="_rN_2cJA0EeudvJ-5WmnCFA"/>
+      <bindings xmi:id="_Jq9n0JA4EeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.keybinding.2" keySequence="F5" command="_K-LJIIhWEeuUasZwfx_Dxg"/>
+      <bindings xmi:id="_I1iwkJW7Eeuj8KOqvr6Arw" elementId="com.m4rc310.coamo.keybinding.3" keySequence="M1+G" command="_sFBb0J_cEeuFxNL-m8BIkQ"/>
+      <bindings xmi:id="_iXIqEJvSEeuFxNL-m8BIkQ" elementId="com.m4rc310.coamo.keybinding.4" keySequence="M1+T" command="_Qy6koJs-EeuFxNL-m8BIkQ"/>
+      <bindings xmi:id="_WEzmcKPNEeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.keybinding.5" keySequence="M1+M2+E" command="_16pBgKPLEeu7LPBsnCgBzA"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_PvHxYI3BEeudvJ-5WmnCFA" featurename="children" parentElementId="org.eclipse.ui.main.toolbar" positionInList="before:com.m4rc310.vega.rcp.toolbarseparator.0">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_VROvEI3BEeudvJ-5WmnCFA" elementId="com.m4rc310.coamo.handledtoolitem.abrir" label="Abrir" iconURI="platform:/plugin/com.m4rc310.coamo/icons/document-open.png" tooltip="Abrir" command="_9HZsgI25EeudvJ-5WmnCFA"/>
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_oLMg8KV2Eeu7LPBsnCgBzA" elementId="com.m4rc310.coamo.directtoolitem.teste" label="Teste" iconURI="platform:/plugin/com.m4rc310.coamo/icons/ok.png" contributionURI="bundleclass://com.m4rc310.coamo/com.m4rc310.coamo.handlers.HandlerTest"/>
+  </fragments>
+</fragment:ModelFragments>

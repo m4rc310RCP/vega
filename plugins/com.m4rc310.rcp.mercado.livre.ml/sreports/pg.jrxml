@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pg" pageWidth="1191" pageHeight="842" orientation="Landscape" columnWidth="1151" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ab7d7c5-3779-4ed2-b336-912dc1d22207">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="htmlCode" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="u" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.Unidade">
+		<fieldDescription><![CDATA[unidade]]></fieldDescription>
+	</field>
+	<field name="c" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.Cipa">
+		<fieldDescription><![CDATA[unidade.cipa]]></fieldDescription>
+	</field>
+	<field name="g" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.GestaoCipa">
+		<fieldDescription><![CDATA[unidade.cipa.gestao]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="399" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="130" height="50" uuid="60d59ab4-0336-445a-8755-d1a5f40ccfb8"/>
+				<image>
+					<reportElement x="0" y="0" width="120" height="42" uuid="a73f3c80-3bec-4125-9305-ee1ea9cdcc18"/>
+					<imageExpression><![CDATA["/img/logo-coamo.png"]]></imageExpression>
+				</image>
+			</frame>
+			<image>
+				<reportElement x="0" y="50" width="939" height="349" uuid="4587ef5f-0518-4df7-bb38-c265e758de7c"/>
+				<imageExpression><![CDATA["/img/Planta Baixa.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="130" y="0" width="818" height="42" uuid="70e1e5e8-d311-47f3-8728-0f9cce43dc91"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[msg("MAPA DE RISCOS - {0} - CIPA {1}", $F{u}.getNome(),$F{g}.getGestao())]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement mode="Opaque" x="960" y="0" width="191" height="120" backcolor="#D0A8E0" uuid="39be7b3f-fa7e-4c91-a118-3e939e4f1e8d"/>
+				<textField>
+					<reportElement x="0" y="56" width="191" height="24" forecolor="#2C903E" uuid="5ecdb17a-3765-4401-b12e-9c5ad913aef4"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[msg("Gestão {0}", $F{g}.getGestao())]]></textFieldExpression>
+				</textField>
+				<image>
+					<reportElement x="70" y="6" width="50" height="50" uuid="9e599890-b8bc-445f-8b01-87f8100edcfc"/>
+					<imageExpression><![CDATA["/img/LogoCipa.png"]]></imageExpression>
+				</image>
+				<subreport>
+					<reportElement x="0" y="80" width="191" height="40" uuid="bcc46b98-68f7-4f54-b13b-1dd8af89092f"/>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource($F{g}.getAtribuicoes())]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_atribuicoes")]]></subreportExpression>
+				</subreport>
+			</frame>
+			<image scaleImage="Clip" hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="40" y="270" width="40" height="40" uuid="97d80a39-910f-44d5-a8cd-03350f556586">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[cipa.ImgRisco.getRisco(3,32)]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="890" y="110" width="21" height="21" uuid="531022d4-fca2-498e-bd1e-91997edc72f4"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getRisco(2, 40)]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="471" y="180" width="21" height="21" uuid="09905e8c-1c0a-48b3-adc5-f4f5d1610a30"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getRisco(3,40)]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="40" y="140" width="40" height="40" uuid="8bb84361-44ab-4b99-a673-b978dc404f65">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[cipa.ImgRisco.getRisco(4,20)]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="270" y="210" width="40" height="40" uuid="670b87f1-37df-4b4b-894d-a55665085879">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[cipa.ImgRisco.getRisco(2,40)]]></imageExpression>
+			</image>
+			<image scaleImage="Clip" hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="583" y="150" width="40" height="40" uuid="d1d04390-f4dc-4004-b4f6-7b3d242ca794">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[cipa.ImgRisco.getRisco(4,40)]]></imageExpression>
+			</image>
+		</band>
+		<band height="20">
+			<rectangle>
+				<reportElement x="980" y="0" width="20" height="20" uuid="d6f3e5f8-9502-4e53-9953-2360a3587a47"/>
+			</rectangle>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

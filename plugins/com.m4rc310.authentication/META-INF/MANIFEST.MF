@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Authentication
+Bundle-SymbolicName: com.m4rc310.authentication
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.m4rc310.authentication.Activator
+Bundle-Vendor: M4RC310
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.m4rc310.authentication
+Bundle-ActivationPolicy: lazy

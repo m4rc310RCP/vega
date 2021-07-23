@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="Vega">
+         <property
+               name="appName"
+               value="Vega">
+         </property>
+       
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.m4rc310.vega.rcp/css/mls.css">
+         </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.rcp.E4LifeCycle">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,252,445,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="windowImages"
+               value="/products/com.m4rc310.vega.rcp/icons/colors.png,/products/com.m4rc310.vega.rcp/icons/umbrela.png">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   
+   <extension
+         point="com.opcoach.e4.preferences.e4PreferencePages">
+      <page
+            class="com.m4rc310.vega.rcp.preferences.RootPreferencePage"
+            id="com.m4rc310.vega.rcp.page.root"
+            name="%text.general">
+      </page>
+   </extension>
+
+</plugin>

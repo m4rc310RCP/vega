@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.m4rc310.vega</groupId>
+	<artifactId>configurations</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Configuration's</name>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<properties>
+		<tycho.version>1.7.0</tycho.version>
+		<wagon.version>1.6.0</wagon.version>
+		<tycho-extras.version>1.7.0</tycho-extras.version>
+		<swt.version>4.3</swt.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<eclipse-repo.url>http://download.eclipse.org/releases/2018-09</eclipse-repo.url>
+		<!-- <eclipse-repo.url>https://download.eclipse.org/releases/latest/</eclipse-repo.url> -->
+	</properties>
+
+
+	<licenses>
+		<license>
+			<name>EPL v2.0</name>
+			<url>https://www.eclipse.org/legal/epl-2.0/</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>m4rc310</id>
+			<name>Marcelo Lopes da Silva</name>
+			<email>marcelo.utfpr@me.com</email>
+			<timezone>+4</timezone>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+
+	<repositories>
+		<repository>
+			<id>eclipse-release</id>
+			<url>${eclipse-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+
+		<repository>
+			<id>maven-eclipse-repo</id>
+			<url>http://maven-eclipse.github.io/maven</url>
+		</repository>
+
+		<repository>
+			<id>opcoach</id>
+			<url>https://opcoach.com/repository/2018-12</url>
+			<layout>p2</layout>
+		</repository>
+		<!-- <repository> -->
+		<!-- <id>databinds</id> -->
+		<!-- <url>http://download.eclipse.org/releases/2019-09</url> -->
+		<!-- <layout>p2</layout> -->
+		<!-- </repository> -->
+
+		<repository>
+			<id>projectlombok.org</id>
+			<url>http://projectlombok.org/mavenrepo</url>
+		</repository>
+
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>p2Repo</id>
+			<url>ftp://files.000webhost.com/public_html/vega/updates</url>
+		</repository>
+	</distributionManagement>
+
+
+	<build>
+
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<verbose>true</verbose>
+					<fork>true</fork>
+					<executable>${JAVA_1_8_HOME}/bin/javac</executable>
+					<compilerVersion>1.3</compilerVersion>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<!--Enable the replacement of the SNAPSHOT version in the final product 
+				configuration -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<id>package-feature</id>
+						<configuration>
+							<finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<environments>
+						<!-- <environment> -->
+						<!-- <os>linux</os> -->
+						<!-- <ws>gtk</ws> -->
+						<!-- <arch>x86_64</arch> -->
+						<!-- </environment> -->
+						<!-- <environment> -->
+						<!-- <os>win32</os> -->
+						<!-- <ws>win32</ws> -->
+						<!-- <arch>x86</arch> -->
+						<!-- </environment> -->
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+
+			</plugin>
+
+
+
+		</plugins>
+	</build>
+
+
+</project>

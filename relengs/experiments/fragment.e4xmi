@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_A-YvQGwHEeuI3ps1apVu6A">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DzR4wGwHEeuI3ps1apVu6A" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_Lb2MoGwHEeuI3ps1apVu6A" elementId="com.m4rc310.vega.ml.addon.start" contributionURI="bundleclass://com.m4rc310.vega.ml/com.m4rc310.vega.ml.addons.AddonStart"/>
+    <elements xsi:type="application:Addon" xmi:id="_HddpgGwdEeuI3ps1apVu6A" elementId="com.m4rc310.vega.ml.addon.0" contributionURI="bundleclass://com.m4rc310.vega.ml/com.m4rc310.vega.ml.addons.AddonInitGuiControl"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_UWzbkGyuEeuI3ps1apVu6A" featurename="children" parentElementId="org.eclipse.ui.main.toolbar" positionInList="after:com.m4rc310.vega.rcp.toolbarseparator.1">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_yVk8cGyuEeuI3ps1apVu6A" elementId="com.m4rc310.vega.ml.handledtoolitem.textpjorpf" toBeRendered="false" visible="false" label="%text.pj.or.pf" iconURI="platform:/plugin/com.m4rc310.vega.rcp/icons/16x16/apps/system-users.png"/>
+    <elements xsi:type="menu:ToolBarSeparator" xmi:id="_xywq0G9BEeuI3ps1apVu6A" elementId="com.m4rc310.vega.ml.toolbarseparator.0"/>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_bSDf8HJgEeu2kKNSPWpF5Q" elementId="com.m4rc310.vega.ml.handledtoolitem.testconnection" label="Test Connection" command="_MyI5wHJgEeu2kKNSPWpF5Q"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_g4NDoG9AEeuI3ps1apVu6A" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_MyI5wHJgEeu2kKNSPWpF5Q" elementId="com.m4rc310.vega.ml.command.testapiml" commandName="Test Api ML"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5dtZwG9AEeuI3ps1apVu6A" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_VGgjsHJgEeu2kKNSPWpF5Q" elementId="com.m4rc310.vega.ml.handler.0" contributionURI="bundleclass://com.m4rc310.vega.ml/com.m4rc310.vega.ml.handlers.HandlerTestIntegration" command="_MyI5wHJgEeu2kKNSPWpF5Q"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_1OgwUHNwEeuVs7UTZH9EJw" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_4-ykAHNwEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.ml.partdescriptor.authorization" label="%text.authorization" iconURI="platform:/plugin/com.m4rc310.vega.rcp/icons/16x16/actions/system-lock-screen.png" tooltip="%text.authorization" category="com.m4rc310.vega.rcp.partstack.auth" contributionURI="bundleclass://com.m4rc310.vega.ml/com.m4rc310.vega.ml.parts.PartMLAuthorization"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DBT6gHRxEeuVs7UTZH9EJw" featurename="children" parentElementId="com.m4rc310.vega.rcp.perspectivestack.main">
+    <elements xsi:type="advanced:Perspective" xmi:id="_1wvvUHOfEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.perspective.authorization" label="%perspective.authorization" tooltip="%perspective.authorization">
+      <children xsi:type="basic_1:PartSashContainer" xmi:id="_1wvvUXOfEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.partsashcontainer.1">
+        <children xsi:type="basic_1:PartStack" xmi:id="_1wvvUnOfEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.partstack.auth">
+          <tags>com.m4rc310.vega.rcp.partstack.auth</tags>
+        </children>
+      </children>
+      <trimBars xmi:id="_wBVUYHRuEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.trimbar.top">
+        <children xsi:type="menu:ToolBar" xmi:id="_wBV7cHRuEeuVs7UTZH9EJw" elementId="org.eclipse.ui.main.toolbar"/>
+        <children xsi:type="menu:ToolBar" xmi:id="_wBV7dHRuEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.toolbar.tests"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_wBV7dXRuEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.toolcontrol.stretch" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.ml.toolcontrols.ToolcontrolStretch">
+          <tags>stretch</tags>
+        </children>
+        <children xsi:type="menu:ToolBar" xmi:id="_wBV7dnRuEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.toolbar.search"/>
+      </trimBars>
+    </elements>
+    <elements xsi:type="advanced:Perspective" xmi:id="_FK55sHRwEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.perspective.default" label="%perspective.default">
+      <children xsi:type="basic_1:PartSashContainer" xmi:id="_FK55sXRwEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.partsashcontainer.main" horizontal="true">
+        <children xsi:type="basic_1:PartSashContainer" xmi:id="_FK55snRwEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.partsashcontainer.left" toBeRendered="false" containerData="35" horizontal="true">
+          <children xsi:type="basic_1:PartStack" xmi:id="_FK55s3RwEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.partstack.left.side">
+            <tags>com.m4rc310.vega.rcp.partstack.left.side</tags>
+          </children>
+        </children>
+        <children xsi:type="basic_1:PartSashContainer" xmi:id="_FK55tHRwEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.partsashcontainer.0" containerData="65" horizontal="true">
+          <children xsi:type="advanced:Placeholder" xmi:id="_FK55tXRwEeuVs7UTZH9EJw" elementId="org.eclipse.ui.editorss" closeable="true">
+            <ref xsi:type="advanced:Area" href="../com.m4rc310.vega.rcp/Application.e4xmi#_6RXZwHRuEeuVs7UTZH9EJw"/>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mapa" pageWidth="1191" pageHeight="842" orientation="Landscape" columnWidth="1159" leftMargin="16" rightMargin="16" topMargin="20" bottomMargin="20" uuid="c5f7ee22-f1fc-441e-a5f7-cd451c31793e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="u" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.Unidade">
+		<fieldDescription><![CDATA[unidade]]></fieldDescription>
+	</field>
+	<field name="c" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.Cipa">
+		<fieldDescription><![CDATA[unidade.cipa]]></fieldDescription>
+	</field>
+	<field name="g" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.GestaoCipa">
+		<fieldDescription><![CDATA[unidade.cipa.gestao]]></fieldDescription>
+	</field>
+	<field name="setores" class="java.util.List">
+		<fieldDescription><![CDATA[unidade.setores]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="43" splitType="Stretch">
+			<rectangle>
+				<reportElement x="120" y="0" width="1030" height="43" uuid="e5ccb971-99ff-4e68-b995-0a18107193d8"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="120" height="43" uuid="6fb25045-54f9-4de0-86b2-2b163846bf9c"/>
+				<imageExpression><![CDATA["/img/logo-coamo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Transparent" x="948" y="0" width="203" height="20" uuid="5e817d2c-4c92-4480-9dec-b5faf1b24d58">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+					<paragraph rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Revisão: 001"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="948" y="21" width="203" height="22" forecolor="#8A8A8A" uuid="fd436c8e-37f3-4121-8753-c6d720220791">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+					<paragraph rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[msg("{0,date,dd/MM/yyyy}", new Date())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="120" y="0" width="828" height="43" uuid="2ee12b4c-d90e-4088-bfaa-ee9f3dff2b45"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[msg("MAPA DE RISCOS - {0} - CIPA {1}", $F{u}.getNome(),$F{g}.getGestao()).toUpperCase()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="382" splitType="Stretch">
+			<rectangle radius="6">
+				<reportElement x="0" y="4" width="951" height="360" isPrintWhenDetailOverflows="true" backcolor="#C7BFBF" uuid="66356f22-a1d4-4875-abff-4290bf88f009">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<subreport>
+				<reportElement x="951" y="5" width="200" height="124" uuid="e61060e6-3fa2-4b32-bfa0-a80ca372e63d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSourceObject($F{g})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_membros2")]]></subreportExpression>
+			</subreport>
+			<image>
+				<reportElement x="4" y="10" width="943" height="352" uuid="cdecce77-83f9-4274-82d5-11c479afbd24">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["/img/Planta Baixa.png"]]></imageExpression>
+			</image>
+			<subreport>
+				<reportElement x="0" y="365" width="1159" height="16" uuid="b5eb902a-731c-4a5e-9845-5a95bc5a0da9"/>
+				<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource($F{setores})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_setores")]]></subreportExpression>
+			</subreport>
+			<image>
+				<reportElement x="701" y="190" width="79" height="30" uuid="71113445-1613-412c-9350-cd4ff3cb6d05"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 12L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="30" y="90" width="79" height="30" uuid="ebca14d0-0d08-412d-a026-131c02833622"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 7L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="10" y="190" width="79" height="30" uuid="70c8cded-7f96-4067-95b7-2efa2ff8e077"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 8L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="820" y="150" width="79" height="30" uuid="70fc3547-d1e5-4609-a5a9-11f8a30c5a16"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 7L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="650" y="140" width="80" height="30" uuid="9ecee70a-c997-4205-ab59-0315f3ed9746"/>
+				<imageExpression><![CDATA["/image.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="730" y="60" width="79" height="30" uuid="da40efec-337c-4688-b602-d3e424b3beee"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 5L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="830" y="70" width="41" height="30" uuid="5d6eadcc-79ae-4eb6-82ad-87122786e524"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 2L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="330" y="180" width="79" height="30" uuid="23b19eb8-c014-49e1-88ce-d853ad5a11c4"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 14L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="390" y="140" width="79" height="30" uuid="1fee10c2-3a4d-45be-939f-c7d3fb12eabe"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 15L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="760" y="129" width="79" height="30" uuid="1686c6b1-907c-49fb-909c-d177fb6f4a73"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 11L, 40)]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="760" y="100" width="79" height="30" uuid="1090a41f-81c0-45af-a58f-dee17ac1b42c"/>
+				<imageExpression><![CDATA[cipa.ImgRisco.getIconRisco($F{setores}, 10L, 40)]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement x="20" y="237" width="181" height="91" uuid="73b43ff4-752a-482e-a9db-107b1a597e86"/>
+				<rectangle radius="8">
+					<reportElement mode="Opaque" x="0" y="0" width="181" height="100" backcolor="#A1302F" uuid="c85a3f71-9d55-4634-a958-869e36645a9c"/>
+					<graphicElement>
+						<pen lineWidth="0.4" lineColor="#1E519E"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle radius="6">
+					<reportElement x="2" y="12" width="177" height="86" uuid="d13a4b09-2821-4d46-9ea7-bd3538d88ee9">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="-10" y="0" width="191" height="12" forecolor="#FCFC0A" uuid="4b3041db-ef15-4215-84cd-b04cebdd7d94"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Simbologia das Cores]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="6" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="0" width="358" height="6" uuid="28023795-9475-47a7-a219-ed2dbcd5ec8e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[Mapa de Riscos Ambientais - Coamo - Corumbataí do Sul - PR - CIPA 2019/2020 ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

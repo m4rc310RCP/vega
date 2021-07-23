@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_CfmaoLypEeusVKSJUy_0dw">
+  <imports xsi:type="commands:BindingContext" xmi:id="_PPYf8LypEeusVKSJUy_0dw" elementId="org.eclipse.ui.contexts.dialogAndWindow"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Tb__cLyrEeusVKSJUy_0dw" featurename="categories" parentElementId="xpath:/">
+    <elements xsi:type="commands:Category" xmi:id="_VwjcALyrEeusVKSJUy_0dw" elementId="com.m4rc310.financas.category.general" name="General" description="General Categories"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hXnlwLyrEeusVKSJUy_0dw" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_m8N2wLyrEeusVKSJUy_0dw" elementId="com.m4rc310.financas.command.save" commandName="Save" description="Save" category="_VwjcALyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Command" xmi:id="_q9xAoLyrEeusVKSJUy_0dw" elementId="com.m4rc310.financas.command.saveAll" commandName="SaveAll" description="Save All Autherations" category="_VwjcALyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Command" xmi:id="_xGQ5ALzkEeusVKSJUy_0dw" elementId="com.m4rc310.financas.command.new.account" commandName="NewAccount" description="Registry new Account" category="_VwjcALyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Command" xmi:id="_q4YBILzpEeusVKSJUy_0dw" elementId="org.eclipse.ui.file.newQuickMenu" commandName="New" description="New" category="_VwjcALyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Command" xmi:id="_1gKVkMKDEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.command.logout" commandName="Logout"/>
+    <elements xsi:type="commands:Command" xmi:id="_3G4JwMNJEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.command.updateapp" commandName="Update App"/>
+    <elements xsi:type="commands:Command" xmi:id="_C3vuoMTdEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.command.showpdv" commandName="Show PDV" description="Show PDV" category="_VwjcALyrEeusVKSJUy_0dw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_I4d6ALzREeusVKSJUy_0dw" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_OkRmQLzREeusVKSJUy_0dw" elementId="com.m4rc310.financas.handler.save" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.handlers.HandlerSave" command="_m8N2wLyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_CLTk0LzZEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handler.saveAll" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.handlers.HandlerSaveAll" command="_q9xAoLyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Handler" xmi:id="__SlNwLzkEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handler.0" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.handlers.HandlerNewAccount" command="_xGQ5ALzkEeusVKSJUy_0dw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_5Hg2wMKDEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.handler.1" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.handlers.HandlerLogout" command="_1gKVkMKDEeuyY7XEstiYPQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_5C5xkMNJEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.handler.2" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.handlers.HandlerUpdate" command="_3G4JwMNJEeuyY7XEstiYPQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_JDmM4MTdEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.handler.3" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.handlers.HandlerShowPDV" command="_C3vuoMTdEeuYbqdZYMjkPA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_OWg9cLzZEeusVKSJUy_0dw" featurename="children" parentElementId="com.m4rc310.vega.rcp.perspectivestack.main">
+    <elements xsi:type="advanced:Perspective" xmi:id="_FzBiIL85EeuyY7XEstiYPQ" elementId="com.m4rc310.financas.perspective.login" label="%label.perspective.login" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/lock.png" tooltip="%label.perspective.login"/>
+    <elements xsi:type="advanced:Perspective" xmi:id="_YLjI4LzZEeusVKSJUy_0dw" elementId="com.m4rc310.financas.perspective.default" label="%label.perspective.default" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/money.png" tooltip="%label.perspective.default">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_6PcsELzZEeusVKSJUy_0dw" elementId="com.m4rc310.financas.partsashcontainer.main" selectedElement="_9VaXcLzZEeusVKSJUy_0dw" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_9VaXcLzZEeusVKSJUy_0dw" elementId="com.m4rc310.financas.partsashcontainer.main.left" containerData="30" selectedElement="_Mo5IkLzaEeusVKSJUy_0dw">
+          <children xsi:type="basic:PartStack" xmi:id="_Mo5IkLzaEeusVKSJUy_0dw" elementId="com.m4rc310.financas.partstack.left">
+            <tags>PartStackLeft</tags>
+            <tags>NoAutoCollapse</tags>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_A9IFALzaEeusVKSJUy_0dw" elementId="com.m4rc310.financas.partsashcontainer.main.editor" containerData="70" selectedElement="_Pcf4oLzaEeusVKSJUy_0dw">
+          <children xsi:type="basic:PartStack" xmi:id="_Pcf4oLzaEeusVKSJUy_0dw" elementId="org.eclipse.e4.primaryDataStack">
+            <tags>EditorStack</tags>
+            <tags>org.eclipse.e4.primaryDataStack</tags>
+            <tags>primaryCategory</tags>
+            <tags>NoAutoCollapse</tags>
+            <tags>editorCategory</tags>
+          </children>
+        </children>
+      </children>
+    </elements>
+    <elements xsi:type="advanced:Perspective" xmi:id="_2P39QMTeEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.perspective.pdv" label="%label.perspective.pdv" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/cart_put.png" tooltip="%label.perspective.pdv">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_MNKpEMThEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.partsashcontainer.0" selectedElement="_PkULEMThEeuYbqdZYMjkPA" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_PkULEMThEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.partsashcontainer.1" containerData="35">
+          <tags>NoAutoCollapse</tags>
+          <children xsi:type="basic:PartStack" xmi:id="_gv9-wMThEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.partstack.list" containerData="70">
+            <tags>NoAutoCollapse</tags>
+            <children xsi:type="basic:Part" xmi:id="_F9fL8MWrEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.part.list.buys" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.parts.pdv.PartPDVListBuys" label="%part.pdv.list.buys" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/cart_put.png" tooltip="%title.part.pdv.list.buys">
+              <toolbar xmi:id="_U1WYEMWrEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.toolbar.4"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_S0fF4MTiEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.partstack.0" containerData="30">
+            <tags>NoAutoCollapse</tags>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_TRwGIMThEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.partsashcontainer.2" containerData="65">
+          <children xsi:type="basic:PartStack" xmi:id="_lQeVgMThEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.partstack.details">
+            <tags>NoAutoCollapse</tags>
+            <children xsi:type="basic:Part" xmi:id="_AVzVUMToEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.part.partpdvdetails" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.parts.pdv.PartPDVDetails" label="%part.pdv.details" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/flag_yellow.png" tooltip="%part.pdv.details">
+              <toolbar xmi:id="_RNHQsMToEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.toolbar.3"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_QsRpALzbEeusVKSJUy_0dw" featurename="children" parentElementId="org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_UOR5sLznEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledtoolitem.textnew" label="%text.new" iconURI="platform:/plugin/com.m4rc310.vega.rcp/icons/16x16/actions/window-new.png" tooltip="%text.new" command="_q4YBILzpEeusVKSJUy_0dw">
+      <tags>Opaque</tags>
+      <menu xmi:id="_ZpK1ELznEeusVKSJUy_0dw" elementId="com.m4rc310.financas.menu.0">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_v3ClcLznEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledmenuitem.accont" label="%text.account" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/money_add.png" tooltip="%text.account" command="_xGQ5ALzkEeusVKSJUy_0dw"/>
+      </menu>
+    </elements>
+    <elements xsi:type="menu:ToolBarSeparator" xmi:id="_gjMn8LznEeusVKSJUy_0dw" elementId="com.m4rc310.financas.toolbarseparator.0"/>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_UWUR0LzbEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledtoolitem.save" label="%text.save" iconURI="platform:/plugin/com.m4rc310.financas/icons/save_edit.png" tooltip="%text.save" command="_m8N2wLyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_uPE_kLzbEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledtoolitem.saveAll" accessibilityPhrase="" label="%text.save.all" iconURI="platform:/plugin/com.m4rc310.financas/icons/saveall_edit_floppy.png" tooltip="%text.save.all" command="_q9xAoLyrEeusVKSJUy_0dw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_03fokLzcEeusVKSJUy_0dw" featurename="bindingTables" parentElementId="xpath:/">
+    <elements xsi:type="commands:BindingTable" xmi:id="_B_WPoLzdEeusVKSJUy_0dw" elementId="com.m4rc310.financas.bindingtable.0" bindingContext="_PPYf8LypEeusVKSJUy_0dw">
+      <bindings xmi:id="_DlMzILzdEeusVKSJUy_0dw" elementId="com.m4rc310.financas.keybinding.0" keySequence="M1+S" command="_m8N2wLyrEeusVKSJUy_0dw"/>
+      <bindings xmi:id="_GQ2hELzdEeusVKSJUy_0dw" elementId="com.m4rc310.financas.keybinding.1" keySequence="M1+M2+S&#xA;" command="_q9xAoLyrEeusVKSJUy_0dw"/>
+      <bindings xmi:id="_9fOSYLznEeusVKSJUy_0dw" elementId="com.m4rc310.financas.keybinding.2" keySequence="M3+A" command="_xGQ5ALzkEeusVKSJUy_0dw"/>
+      <bindings xmi:id="_d-LmILzqEeusVKSJUy_0dw" elementId="com.m4rc310.financas.keybinding.3" keySequence="ALT+COMMAND+N" command="_q4YBILzpEeusVKSJUy_0dw"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hzk5cLzhEeusVKSJUy_0dw" featurename="children" parentElementId="file">
+    <elements xsi:type="menu:MenuSeparator" xmi:id="_-3oegLzhEeusVKSJUy_0dw" elementId="com.m4rc310.financas.menuseparator.save.side"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_BxEw0LziEeusVKSJUy_0dw" featurename="children" parentElementId="file" positionInList="after:com.m4rc310.financas.menuseparator.save.side">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_xJh6ULziEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledmenuitem.save" label="%text.save" iconURI="platform:/plugin/com.m4rc310.financas/icons/save_edit.png" tooltip="%text.save" command="_m8N2wLyrEeusVKSJUy_0dw"/>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_T4qy4LzjEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledmenuitem.saveAll" label="%text.save.all" iconURI="platform:/plugin/com.m4rc310.financas/icons/saveall_edit_floppy.png" tooltip="%text.save.all" command="_q9xAoLyrEeusVKSJUy_0dw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_7pn_gLzjEeusVKSJUy_0dw" featurename="children" parentElementId="file" positionInList="before:com.m4rc310.financas.menuseparator.save.side">
+    <elements xsi:type="menu:Menu" xmi:id="_WROW8LzpEeusVKSJUy_0dw" elementId="org.eclipse.ui.file.newQuickMenu" label="%text.new" iconURI="platform:/plugin/com.m4rc310.vega.rcp/icons/16x16/actions/window-new.png" tooltip="%text.new">
+      <tags>Opaque</tags>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_HdmucLzlEeusVKSJUy_0dw" elementId="com.m4rc310.financas.handledmenuitem.new.account" label="%text.account" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/money_add.png" tooltip="%text.account" command="_xGQ5ALzkEeusVKSJUy_0dw"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Rc7AYL1rEeuyY7XEstiYPQ" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_2RBaUL1rEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.partdescriptor.partAccount" label="%text.new.account" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/coins_add.png" tooltip="%text.new.account" allowMultiple="true" category="editorCategory" closeable="true" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.parts.PartAccount">
+      <toolbar xmi:id="_hsqI8L1sEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hINioL1tEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.handledmenuitem.save" label="%text.save" iconURI="platform:/plugin/com.m4rc310.financas/icons/save_edit.png" tooltip="%text.save" command="_m8N2wLyrEeusVKSJUy_0dw"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_2O-agMFeEeuyY7XEstiYPQ" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_72gqwMFeEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.addon.start" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.addons.AddonStart"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_KPujoMJ-EeuyY7XEstiYPQ" featurename="children" parentElementId="com.m4rc310.vega.rcp.trimbar.top" positionInList="">
+    <elements xsi:type="menu:ToolBar" xmi:id="_qIuEIMLvEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.toolbar.user">
+      <children xsi:type="menu:ToolControl" xmi:id="_6ynycMLrEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.toolcontrol.user.info" contributionURI="bundleclass://com.m4rc310.financas/com.m4rc310.financas.toolcontrols.ToolcontrolUserInfo"/>
+    </elements>
+    <elements xsi:type="menu:ToolBar" xmi:id="_UK3XEMJ-EeuyY7XEstiYPQ" elementId="com.m4rc310.financas.toolbar.login">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_ffTfwMJ-EeuyY7XEstiYPQ" elementId="com.m4rc310.financas.handledtoolitem.login.logout" label="%text.logout" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/lock_open.png" tooltip="%text.logout" command="_1gKVkMKDEeuyY7XEstiYPQ"/>
+    </elements>
+    <elements xsi:type="menu:ToolBar" xmi:id="_MfoekMMfEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.toolbar.1">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_NmwesMMfEeuyY7XEstiYPQ" elementId="com.m4rc310.financas.handledtoolitem.update" label="%text.update" iconURI="platform:/plugin/com.m4rc310.vega.rcp/icons/16x16/others/computer_go.png" tooltip="%text.update" command="_3G4JwMNJEeuyY7XEstiYPQ"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_zFwAEMTdEeuYbqdZYMjkPA" featurename="children" parentElementId="com.m4rc310.vega.rcp.trimbar.top" positionInList="after:org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:ToolBar" xmi:id="_2bIngMTdEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.toolbar.2">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_o84IEMTcEeuYbqdZYMjkPA" elementId="com.m4rc310.financas.handledtoolitem.textshowpdv" label="%text.show.pdv" iconURI="platform:/plugin/com.m4rc310.icons/icons/16x16/others/cart_put.png" tooltip="%text.show.pdv" command="_C3vuoMTdEeuYbqdZYMjkPA"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.window.main" label="Vega" iconURI="platform:/plugin/com.m4rc310.vega.rcp/icons/umbrela.png" x="0" y="0" width="300" height="300">
+    <tags>shellMaximized</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_IEXCMHS0EeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.perspectivestack.main"/>
+    <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu" toBeRendered="false">
+      <children xsi:type="menu:Menu" xmi:id="_rUrAgIVPEeuUasZwfx_Dxg" elementId="file" label="Arquivo" mnemonics="F">
+        <children xsi:type="menu:Menu" xmi:id="_uGW5wLTKEeusjO-NYwKfeA" elementId="new" label="%text.new"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_vIokMLTMEeusjO-NYwKfeA" elementId="com.m4rc310.vega.rcp.menuseparator.0"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_L00JwLZXEeusjO-NYwKfeA" elementId="window" label="%text.window" mnemonics="W"/>
+    </mainMenu>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_6RXZwHRuEeuVs7UTZH9EJw" elementId="org.eclipse.ui.editorss">
+      <tags>REMOVE_ON_HIDE_TAG</tags>
+      <children xsi:type="basic:PartStack" xmi:id="_6RXZwXRuEeuVs7UTZH9EJw" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>EditorStack</tags>
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>primaryCategory</tags>
+        <tags>NoAutoCollapse</tags>
+        <tags>editorCategory</tags>
+      </children>
+    </sharedElements>
+    <trimBars xmi:id="_cBAAsHS9EeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.trimbar.top" toBeRendered="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_eDQzYHS9EeuVs7UTZH9EJw" elementId="org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_LcwkUI3BEeudvJ-5WmnCFA" elementId="com.m4rc310.vega.rcp.toolbarseparator.0"/>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_D-_nQHXQEeuD4LqDd0hy1g" elementId="stretch" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.ml.toolcontrols.ToolcontrolStretch">
+        <tags>stretch</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_isg80HTFEeuVs7UTZH9EJw" elementId="com.m4rc310.vega.rcp.trimbar.statusbar" side="Bottom"/>
+  </children>
+  <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.handler.quitCommand" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.rcp.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.handler.openCommand" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.rcp.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.handler.saveCommand" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.rcp.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.handler.aboutCommand" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.rcp.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="com.m4rc310.vega.rcp.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ"/>
+  <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
+  <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_6wlLdcgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_GcMbEE_UEeumTbDEVPQN9w" elementId="com.m4rc310.vega.rcp.addon.init.preferences.default" contributionURI="bundleclass://com.m4rc310.vega.rcp/com.m4rc310.vega.rcp.addons.AddonInitPreferences"/>
+</application:Application>

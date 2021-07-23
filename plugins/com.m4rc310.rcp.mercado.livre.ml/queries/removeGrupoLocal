@@ -1,0 +1,18 @@
+mutation{grupoLocal(lotacao:%d descricao:\"%s\"){
+id
+    nome 
+    numero
+  	setores{
+  		id
+      descricao 
+      lotacao
+      grupos{
+      id descricao numeroPessoas
+      	locais{ 
+      		id
+          descricao
+          numeroPessoas 
+          	riscos{id descricao grupoRisco tamanho}
+      }
+    }}
+}}

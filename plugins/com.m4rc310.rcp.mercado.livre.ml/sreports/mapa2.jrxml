@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mapa2" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="806" leftMargin="18" rightMargin="18" topMargin="18" bottomMargin="18" uuid="d96f74f2-f934-4f3f-937a-5b9902d0123c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="u" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.Unidade">
+		<fieldDescription><![CDATA[unidade]]></fieldDescription>
+	</field>
+	<field name="c" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.Cipa">
+		<fieldDescription><![CDATA[unidade.cipa]]></fieldDescription>
+	</field>
+	<field name="g" class="com.m4rc310.rcp.mercado.livre.ml.cipa.models.GestaoCipa">
+		<fieldDescription><![CDATA[unidade.cipa.gestao]]></fieldDescription>
+	</field>
+	<field name="setores" class="java.util.List">
+		<fieldDescription><![CDATA[unidade.setores]]></fieldDescription>
+	</field>
+	<field name="grupos" class="java.util.List">
+		<fieldDescription><![CDATA[unidade.grupos]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="60" y="0" width="746" height="21" uuid="659d7c9b-a7c4-406e-9600-bcfc2c2da0d0"/>
+				<graphicElement>
+					<pen lineWidth="0.3" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="0" y="0" width="56" height="21" uuid="9d38b107-e64f-433a-a098-7910ea8d0dfb"/>
+				<imageExpression><![CDATA["/img/logo-coamo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Opaque" x="60" y="0" width="682" height="21" backcolor="#E0DEDE" uuid="1e2b8524-e9aa-4275-a15c-b332334fd2d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[msg("MAPA DE RISCOS - {0} - CIPA {1}", $F{u}.getNome(),$F{g}.getGestao()).toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="742" y="0" width="64" height="10" backcolor="#E0DEDE" uuid="e55d6616-a9ab-4400-bfdd-bcea6fd79f74">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="8"/>
+					<paragraph leftIndent="0" rightIndent="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Revisão: 002"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="742" y="10" width="64" height="11" backcolor="#E0DEDE" uuid="56f93356-950e-476d-920e-84a7f1eb3c0f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+					<paragraph leftIndent="0" rightIndent="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[msg("{0, date, dd/MM/yyyy}",new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="404" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="806" height="404" uuid="9b19bd03-1534-4695-8aa8-d69ac4f118bd"/>
+				<image>
+					<reportElement x="0" y="3" width="806" height="277" uuid="406b8b49-b6a1-4c6c-b394-64499b3218b4">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA["/img/Planta.png"]]></imageExpression>
+				</image>
+				<subreport>
+					<reportElement x="710" y="42" width="42" height="20" uuid="aa6e6148-b0ac-41d5-b8d8-fa8ff3bd926c">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(2))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="751" y="20" width="42" height="20" uuid="c1dd4cd8-e4b9-4c79-acd9-d454bcbe284d">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(1))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="14" y="145" width="42" height="20" uuid="ae281daa-1b77-43fa-bf8f-33ddf502c130">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(22))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="502" y="87" width="42" height="20" uuid="8193a2b9-9fb6-48ac-aa74-039208b2c829">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(10))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="655" y="29" width="42" height="20" uuid="583a76ec-4577-45da-a582-7825f8cbb07f">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(3))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="655" y="70" width="42" height="20" uuid="e7b2cd8f-380b-4bde-be0b-eede226da069">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(4))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="730" y="100" width="42" height="20" uuid="91b61091-d205-47a9-8dd4-9f9d00e7a64d">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(5))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="720" y="238" width="42" height="20" uuid="0c7f4eb1-82a5-4d78-ab79-3041e1c29cf8">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(7))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="719" y="168" width="42" height="20" uuid="d4338943-4960-48db-b122-bfb5c6739f1c">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(6))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="580" y="73" width="42" height="20" uuid="5dbb84a8-68ca-4e66-bedf-151a6a7cd31b">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(8))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="440" y="90" width="42" height="20" uuid="a023c3f8-7a94-409b-a36d-bc546cd13563">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(12))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="360" y="136" width="42" height="20" uuid="6b766c97-bcfb-4612-8699-b39b8629fee5">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(13))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="300" y="100" width="42" height="20" uuid="a0da53bb-979b-425d-87e8-9fed77d06dcc">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(14))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="230" y="128" width="42" height="20" uuid="7a19d5a7-85fa-4f40-98f2-9bc9a34b45c7">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(16))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="162" y="93" width="42" height="20" uuid="95d51435-fb09-4f4f-a06c-4eec48a5ec83">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(18))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="110" y="94" width="42" height="20" uuid="e09dd217-4739-4ec0-ae94-dde02572a301">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(19))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="50" y="101" width="42" height="20" uuid="8188c20a-6c0c-4eb4-9f4a-f95cea5f8585">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(20))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="50" y="40" width="42" height="20" uuid="e3682875-ca57-4143-81b8-079d32fb6b42">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(23))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="140" y="30" width="42" height="20" uuid="e7e355aa-88b2-4bdc-9901-9c7a4d79424a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(24))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="93" y="144" width="42" height="20" uuid="b078d632-82fe-4e5d-ba98-f7fea721b56e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(21))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="390" y="202" width="42" height="20" uuid="bf7107ee-de5f-42da-92ed-2481308624bf">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(15))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="460" y="30" width="42" height="20" uuid="22c7d1f0-c30d-433c-a533-d98046d6cfa4">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(15))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="544" y="138" width="42" height="20" uuid="ba584fe2-28fc-4406-9518-010f3f1c2434">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(9))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="240" y="67" width="42" height="20" uuid="151aba8b-b682-48de-bc92-3858a3877b5a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(17))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="480" y="190" width="42" height="20" uuid="c8df757b-1404-4eb1-b55c-fce7030b2d83">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(11))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="6" y="181" width="91" height="70" uuid="e72f8bd3-b646-4771-b21a-076e948407bd">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.0"/>
+					</box>
+					<rectangle radius="4">
+						<reportElement stretchType="ContainerHeight" x="0" y="5" width="91" height="30" uuid="a58e3bf4-8b0f-4833-b866-e1c70b2bc2e0">
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.y" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<graphicElement>
+							<pen lineWidth="1.0"/>
+						</graphicElement>
+					</rectangle>
+					<staticText>
+						<reportElement mode="Opaque" x="13" y="0" width="65" height="11" isPrintWhenDetailOverflows="true" forecolor="#9C100E" uuid="6adc8f65-1a14-4272-a8e0-f1d0dc37996e">
+							<property name="com.jaspersoft.studio.unit.y" value="px"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+							<font fontName="Arial" size="6" isBold="true"/>
+						</textElement>
+						<text><![CDATA[TIPOS DE RISCOS]]></text>
+					</staticText>
+					<subreport>
+						<reportElement stretchType="ContainerHeight" x="3" y="12" width="85" height="20" uuid="5aec44da-f9b8-47a1-a381-fb209f043acc">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.tiposRiscos())]]></dataSourceExpression>
+						<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_tipos_riscos")]]></subreportExpression>
+					</subreport>
+					<rectangle>
+						<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="3" y="32" width="31" height="2" uuid="026b72c3-8d06-4f9d-aa4c-ca4dc06d259d">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<graphicElement>
+							<pen lineWidth="0.0"/>
+						</graphicElement>
+					</rectangle>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="280" width="160" height="124" uuid="2acd1532-314e-4f4b-b3af-ad65a029ea43">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSourceObject($F{g})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_membros2")]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="100" y="181" width="91" height="70" uuid="30c037b3-7b7d-4d4f-acff-f4433b610cb9">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.0"/>
+					</box>
+					<rectangle radius="4">
+						<reportElement stretchType="ContainerHeight" x="0" y="5" width="91" height="30" uuid="1f99ff89-ad9a-4fd3-ad68-a755c62dcc68">
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.y" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<graphicElement>
+							<pen lineWidth="1.0"/>
+						</graphicElement>
+					</rectangle>
+					<staticText>
+						<reportElement mode="Opaque" x="13" y="0" width="65" height="11" isPrintWhenDetailOverflows="true" forecolor="#9C100E" uuid="e4b7c0fb-0500-4fb2-9231-99bdb0425db6">
+							<property name="com.jaspersoft.studio.unit.y" value="px"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+							<font fontName="Arial" size="6" isBold="true"/>
+						</textElement>
+						<text><![CDATA[NíVEL DE RISCOS]]></text>
+					</staticText>
+					<subreport>
+						<reportElement stretchType="ContainerHeight" x="3" y="12" width="85" height="20" uuid="f12a8ee3-a590-4b06-82e1-c2b5d090a88c">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.niveisRiscos())]]></dataSourceExpression>
+						<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_niveis_riscos")]]></subreportExpression>
+					</subreport>
+					<rectangle>
+						<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="3" y="32" width="31" height="2" uuid="149228d5-4588-49de-9a61-2eceeb49fa64">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<graphicElement>
+							<pen lineWidth="0.0"/>
+						</graphicElement>
+					</rectangle>
+				</frame>
+				<subreport>
+					<reportElement stretchType="ContainerHeight" x="170" y="280" width="636" height="124" uuid="a5745fb0-7275-41af-9185-a3d335811b4f">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource($F{grupos})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_list_locais")]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement x="410" y="60" width="42" height="20" uuid="699870b9-0129-4ba6-b7aa-874076e458dd">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[reports.utils.R.getJRBeanDataSource(cipa.MP.local(25))]]></dataSourceExpression>
+					<subreportExpression><![CDATA[reports.utils.R.getReport("com.m4rc310.rcp.mercado.livre.ml.sub_risco")]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

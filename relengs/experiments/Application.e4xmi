@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.window.main" label="Master" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_EAXIoDLGEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.perspectivestack.0" selectedElement="_coEeMDLGEeuQvaj8qa6zgw">
+      <children xsi:type="advanced:Perspective" xmi:id="_E8wfcDLGEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.perspective.default" label="Defaut" tooltip="Defaut">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.partsashcontainer.sample" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_tcVsEC_mEeu2OZSqXwv3vw" elementId="" containerData="32">
+            <children xsi:type="basic:PartStack" xmi:id="_J_hOIC_mEeu2OZSqXwv3vw" elementId="com.m4rc310.pos.master.partstack.left.side">
+              <tags>PartStackLeftSide</tags>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_Gd8fcAZSEeuKL8mCK-kWsQ" elementId="com.m4rc310.pos.master.partsashcontainer.principal" containerData="68">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_W4Q80AZSEeuKL8mCK-kWsQ" elementId="" horizontal="true">
+              <children xsi:type="advanced:Placeholder" xmi:id="_bw-YMAZSEeuKL8mCK-kWsQ" elementId="org.eclipse.ui.editorss" ref="_kRyKYAZMEeuKL8mCK-kWsQ"/>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_coEeMDLGEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.perspective.inicial" label="Inicial">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_guWXEDLGEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.partsashcontainer.0"/>
+      </children>
+    </children>
+    <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_6wlLisgZEeSyMNYR5xypkQ" elementId="file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handleditem.file.open" toBeRendered="false" label="Open" iconURI="platform:/plugin/com.m4rc310.pos.icons/bin/16x16/others/folder.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handleditem.save" toBeRendered="false" label="Save" iconURI="platform:/plugin/com.m4rc310.pos.icons/bin/16x16/others/action_save.gif" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_upZ1QBsjEeupAdge8qDRTQ" elementId="com.m4rc310.pos.master.menu.view" label="View"/>
+      <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+      </children>
+    </mainMenu>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_kRyKYAZMEeuKL8mCK-kWsQ" elementId="org.eclipse.ui.editorss">
+      <tags>REMOVE_ON_HIDE_TAG</tags>
+      <children xsi:type="basic:PartStack" xmi:id="_kRyKYQZMEeuKL8mCK-kWsQ" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>EditorStack</tags>
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>primaryCategory</tags>
+        <tags>NoAutoCollapse</tags>
+      </children>
+    </sharedElements>
+    <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handleditem.trimbar.top.save" toBeRendered="false" iconURI="platform:/plugin/com.m4rc310.pos.icons/bin/16x16/others/action_save.gif" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handleditem.trimbar.top.open" toBeRendered="false" iconURI="platform:/plugin/com.m4rc310.pos.icons/bin/16x16/others/folder.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_tra6QAX_EeuH5NfjDKFatQ" elementId="com.m4rc310.pos.master.toolbar.reservad" accessibilityPhrase="reservad"/>
+      <children xsi:type="menu:ToolControl" xmi:id="_xQMBgAX_EeuH5NfjDKFatQ" elementId="com.m4rc310.pos.master.toolcontrol.sp" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.toolcontrols.Sp">
+        <tags>stretch</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_bURHUAYAEeuH5NfjDKFatQ" elementId="com.m4rc310.pos.master.toolbar.right">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8_49EDKlEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.handledtoolitem.preferences" label="Preferences" iconURI="platform:/plugin/com.m4rc310.pos.icons/bin/16x16/categories/preferences-system.png" command="_4BphcDKlEeuQvaj8qa6zgw"/>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_opcioAZWEeuKL8mCK-kWsQ" elementId="com.m4rc310.pos.master.trimbar.left" side="Left"/>
+    <trimBars xmi:id="_sckO8AZWEeuKL8mCK-kWsQ" elementId="com.m4rc310.pos.master.trimbar.status.bar" side="Bottom">
+      <children xsi:type="menu:ToolBar" xmi:id="_VLj7sAZYEeuKL8mCK-kWsQ" elementId="com.m4rc310.pos.master.statusbar.toolbar.left"/>
+      <children xsi:type="menu:ToolControl" xmi:id="_nE_bYAZYEeuKL8mCK-kWsQ" elementId="" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.toolcontrols.Sp">
+        <tags>stretch</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_ZhxG8AZYEeuKL8mCK-kWsQ" elementId="com.m4rc310.pos.master.statusbar.toolbar.center">
+        <children xsi:type="menu:ToolControl" xmi:id="_yrKbYDKZEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.toolcontrol.computer_id" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.toolcontrols.ToolcontrolComputerId"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_L7WsUDRSEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.toolbarseparator.0"/>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_s1bI8AZYEeuKL8mCK-kWsQ" elementId="" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.toolcontrols.Sp">
+        <tags>stretch</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_iGNNMAZYEeuKL8mCK-kWsQ" elementId="com.m4rc310.pos.master.statusbar.toolbar.right">
+        <children xsi:type="menu:ToolControl" xmi:id="_KFBkUDLHEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.toolcontrol.clock.server" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.toolcontrols.ToolControlClockServer"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handler.quitCommand" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handler.openCommand" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handler.saveCommand" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.handler.aboutCommand" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_YL65oBWTEeuQNoUgFb6GZA" elementId="com.m4rc310.pos.master.handler.0" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.handlers.BackupHandler" command="_M_KtUBWTEeuQNoUgFb6GZA"/>
+  <handlers xmi:id="_0KUe8DXkEeuM8NEIvOfbUQ" elementId="com.m4rc310.pos.master.handler.1" contributionURI="bundleclass://com.m4rc310.pos.master/com.m4rc310.pos.master.handlers.HandlerPreferences" command="_4BphcDKlEeuQvaj8qa6zgw"/>
+  <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
+    <tags>type:user</tags>
+    <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_6wlLhcgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.keybinding.m1s" keySequence="M1+S" command="_6wlLg8gZEeSyMNYR5xypkQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="com.m4rc310.pos.master.keybinding.m1a" keySequence="M1+A" command="_6wlLhsgZEeSyMNYR5xypkQ">
+      <tags>type:user</tags>
+    </bindings>
+    <bindings xmi:id="_19sQMDKmEeuQvaj8qa6zgw" elementId="com.m4rc310.pos.master.keybinding.0" keySequence="M1+," command="_4BphcDKlEeuQvaj8qa6zgw"/>
+  </bindingTables>
+  <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
+  <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_M_KtUBWTEeuQNoUgFb6GZA" elementId="com.m4rc310.pos.master.command.backupcommand" commandName="Backup Command" category="_UCJn4BWTEeuQNoUgFb6GZA"/>
+  <commands xmi:id="_4BphcDKlEeuQvaj8qa6zgw" elementId="preferences" commandName="Command Open Preferences"/>
+  <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_6wlLdcgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <categories xmi:id="_UCJn4BWTEeuQNoUgFb6GZA" elementId="com.m4rc310.pos.master.category.default" name="Default"/>
+</application:Application>
